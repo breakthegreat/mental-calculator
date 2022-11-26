@@ -9,8 +9,20 @@ def generatingNumbers(min, max):
     return number1, number2
 
 
-def resultAddition(list):
+def resultAdd(list):
     return list[0] + list[1]
+
+
+def resultSub(list):
+    return list[0] - list[1]
+
+
+def resultDiv(list):
+    return list[0] / list[1]
+
+
+def resultMulti(list):
+    return list[0] * list[1]
 
 
 num1 = int(input("Enter the min number"))
@@ -18,7 +30,7 @@ num2 = int(input("Enter the max number"))
 nums = generatingNumbers(num1, num2)
 
 
-finalResult = resultAddition(nums)
+finalResult = resultAdd(nums)
 initial = time.time()
 answer = ""
 
@@ -30,5 +42,3 @@ seconds = time.time()
 finalSecond = str(seconds - initial)
 finalSecond = finalSecond[0:4]  # get only up to 2 decimals
 print("You guessed it correctly! it took you " + finalSecond + " seconds")
-
-print("")
