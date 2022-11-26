@@ -30,3 +30,5 @@ seconds = time.time()
 finalSecond = str(seconds - initial)
 finalSecond = finalSecond[0:4]  # get only up to 2 decimals
 print("You guessed it correctly! it took you " + finalSecond + " seconds")
+
+print("")
